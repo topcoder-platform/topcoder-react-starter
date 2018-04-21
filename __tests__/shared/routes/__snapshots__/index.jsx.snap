@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches shallow snapshot 1`] = `
+<Switch>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+  <Error404Page />
+</Switch>
+`;

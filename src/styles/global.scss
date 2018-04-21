@@ -1,0 +1,10 @@
+/**
+ * Global styles.
+ *
+ * IMPORTANT: These styles are imported at the root of the application. You
+ * should never import them explicitely anywhere else in stylesheets created
+ * for separate components. In case you need some mixins, you should place
+ * them into "mixins.scss" and include that into component stylesheets!
+ */
+
+@import "mixins";
