@@ -1,12 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Passes basic testing 1`] = `
-Array [
-  Object {
-    "applicationModulePath": "/home/birdofprey/Documents/topcoder/Topcoder/topcoder-react-starter/src/shared/index.jsx",
-    "getApplication": [Function],
-    "moduleHot": undefined,
-    "storeFactory": [Function],
-  },
-]
+Object {
+  "getApplication": [Function],
+  "moduleHot": undefined,
+  "storeFactory": [Function],
+}
 `;
