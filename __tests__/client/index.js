@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 jest.mock('shared', () => ({
   default: 'APPLICATION',
 }));
@@ -18,10 +20,13 @@ test('Passes basic testing', () => {
   require('client');
   const { client } = require('topcoder-react-utils');
 
-  const args = client.mock.calls[0];
-  expect(args).toMatchSnapshot();
+  const ops = client.mock.calls[0][0];
+  expect(_.omit(ops, 'applicationModulePath')).toMatchSnapshot();
 
-  expect(args[0].getApplication()).toBe('APPLICATION');
+  expect(ops.applicationModulePath.endsWith('/src/shared/index.jsx'))
+    .toBe(true);
 
-  expect(args[0].storeFactory()).toBeInstanceOf(Promise);
+  expect(ops.getApplication()).toBe('APPLICATION');
+
+  expect(ops.storeFactory()).toBeInstanceOf(Promise);
 });
