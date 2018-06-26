@@ -9,8 +9,12 @@ import './style.scss';
 export default function HelloWorld() {
   return (
     <div>
-      <h1 styleName="title">Hello World!</h1>
-      <p>Topcoder React Starter is up!</p>
+      <h1 styleName="title">
+        Hello World!
+      </h1>
+      <p>
+        Topcoder React Starter is up!
+      </p>
     </div>
   );
 }

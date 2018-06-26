@@ -1,6 +1,7 @@
 const path = require('path');
-const standardConfigFactory =
-  require('topcoder-react-utils/config/webpack/app-production');
+const standardConfigFactory = require(
+  'topcoder-react-utils/config/webpack/app-production',
+);
 const webpackMerge = require('webpack-merge');
 
 const customDefaultConfig = require('./default');
