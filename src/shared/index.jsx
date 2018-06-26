@@ -7,7 +7,13 @@ import Routes from 'routes';
 
 import { DevTools, MetaTags, isomorphy } from 'topcoder-react-utils';
 
-import 'topcoder-react-utils/dist/style.css';
+/* eslint-disable global-require */
+if (process.env.NODE_ENV === 'production') {
+  require('topcoder-react-utils/dist/prod/style.css');
+} else {
+  require('topcoder-react-utils/dist/dev/style.css');
+}
+/* eslint-enable global-require */
 
 export default function Application() {
   return (
