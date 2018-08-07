@@ -1,11 +1,4 @@
-/**
- * Root component of the app.
- */
-
-import React from 'react';
-import Routes from 'routes';
-
-import { DevTools, MetaTags, isomorphy } from 'topcoder-react-utils';
+/* Entry point that ensures correct ordering of imported external styles. */
 
 /* eslint-disable global-require */
 if (process.env.NODE_ENV === 'production') {
@@ -15,15 +8,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 /* eslint-enable global-require */
 
-export default function Application() {
-  return (
-    <div>
-      <MetaTags
-        title="Topcoder React Starter"
-        description="Yet another webapp based on Topcoder React Starter Kit"
-      />
-      <Routes />
-      { isomorphy.isDevBuild() ? <DevTools /> : undefined }
-    </div>
-  );
-}
+require('styles/global.scss');
+
+const App = require('./app').default;
+
+export default App;
