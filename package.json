@@ -39,8 +39,8 @@
     "cross-env": "^5.2.0",
     "lodash": "^4.17.11",
     "raf": "^3.4.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^4.3.1",
     "serialize-javascript": "^1.6.0",
     "topcoder-react-utils": "^0.9.1"
