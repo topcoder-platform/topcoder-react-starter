@@ -43,7 +43,7 @@
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "serialize-javascript": "^1.6.0",
-    "topcoder-react-utils": "^0.9.1"
+    "topcoder-react-utils": "^0.9.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
